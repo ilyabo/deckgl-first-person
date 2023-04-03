@@ -31,39 +31,23 @@ function FirstPersonApp2() {
     new ScatterplotLayer({
       id: "ScatterplotLayer",
       data: "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/bart-stations.json",
-      // coordinateSystem: COORDINATE_SYSTEM.METER_OFFSETS,
-
-      /* props from ScatterplotLayer class */
-
-      // antialiasing: true,
-      // billboard: false,
-      // filled: true,
       getFillColor: [255, 140, 0],
       getLineColor: [0, 0, 0],
-      // getLineWidth: 1,
       getPosition: (d) => d.coordinates,
       getRadius: (d) => Math.sqrt(d.exits),
-      // lineWidthMaxPixels: Number.MAX_SAFE_INTEGER,
       lineWidthMinPixels: 1,
-      // lineWidthScale: 1,
-      // lineWidthUnits: 'meters',
       radiusMaxPixels: 100,
       radiusMinPixels: 1,
       radiusScale: 6,
-      // radiusUnits: 'meters',
       stroked: true,
 
-      /* props inherited from Layer class */
-
-      // autoHighlight: false,
       // coordinateOrigin: [0, 0, 0],
       // coordinateSystem: COORDINATE_SYSTEM.LNGLAT,
       // highlightColor: [0, 0, 128, 128],
       // modelMatrix: null,
+
       opacity: 0.8,
       pickable: false,
-      // visible: true,
-      // wrapLongitude: false,
     }),
   ];
   const [viewState, setViewState] =

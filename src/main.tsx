@@ -1,14 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import FirstPersonApp from "./FirstPersonApp";
-import FirstPersonApp2 from "./FirstPersonApp2";
-import "./index.css";
-import PointCloudApp from "./PointCloudApp";
+import FirstPersonTest from "./FirstPersonTest";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <PointCloudApp />
-    {/* <FirstPersonApp2 /> */}
-    {/* <FirstPersonApp /> */}
+    <FirstPersonTest />
   </React.StrictMode>
 );
