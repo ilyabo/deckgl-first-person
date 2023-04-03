@@ -13,12 +13,11 @@ import {useState} from "react";
 const initialViewState = {
   width: 236,
   height: 110,
-  latitude: 37.87873461641798,
-  longitude: -122.27376041439823,
   zoom: 8.29184745707587,
-  bearing: -52.62711864406781,
-  pitch: 51.890389140271495,
-  altitude: 1.5,
+  bearing: 174.9949286000267,
+  pitch: 34.83096291076329,
+  longitude: -122.27376041439823,
+  latitude: 37.87873461641798,
   maxZoom: 20,
   minZoom: 0,
   maxPitch: 89,
@@ -26,6 +25,7 @@ const initialViewState = {
   normalize: true,
   position: [0, 0, 1000],
 };
+
 function FirstPersonTest() {
   const layers = [
     new ScatterplotLayer({
@@ -66,8 +66,8 @@ function FirstPersonTest() {
         new FirstPersonView({
           focalDistance: 100,
           fovy: 80,
-          // near: 0.1,
-          // far: 1000,
+          near: 0.1,
+          far: 10000,
           controller: true,
         }),
         // new MapView({controller: true}),
