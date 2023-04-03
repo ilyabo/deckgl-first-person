@@ -26,7 +26,7 @@ const initialViewState = {
   normalize: true,
   position: [0, 0, 1000],
 };
-function FirstPersonApp2() {
+function FirstPersonTest() {
   const layers = [
     new ScatterplotLayer({
       id: "ScatterplotLayer",
@@ -100,4 +100,4 @@ function FirstPersonApp2() {
   );
 }
 
-export default FirstPersonApp2;
+export default FirstPersonTest;
