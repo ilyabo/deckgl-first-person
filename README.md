@@ -1,6 +1,7 @@
 # deckgl-first-person
 
-## Running
+
+## Development
 
     yarn
     yarn dev
